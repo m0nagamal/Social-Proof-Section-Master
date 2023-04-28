@@ -1,0 +1,219 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 100px 120px 80px;
+}
+
+main::before {
+    content: '';
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main::after {
+    content: '';
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 992px) {
+    main {
+        padding: 20px;
+    }
+    main::before,
+    main::after {
+        width: 100%;
+    }
+}
+
+main .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main .details .info {
+    flex-basis: 35%;
+}
+
+main .details .info h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+main .details .info p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    main .details {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    main .details .info {
+        margin-bottom: 15px;
+    }
+    main .details .info h1 {
+        font-size: 40px;
+    }
+}
+
+main .details .stats .stat {
+    width: 400px;
+    padding: 15px 25px 15px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 18px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    main .details .stats {
+        width: 100%;
+    }
+    main .details .stats .stat {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    main .details .stats .stat:first-child {
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+    }
+
+    main .details .stats .stat:nth-child(2) {
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+    }
+}
+
+main .details .stats .stat .icon {
+    margin-right: 20px;
+}
+
+main .reviews {
+    flex-basis: 100%;
+    display: flex;
+    gap: 35px;
+}
+
+@media (max-width: 992px) {
+    main .reviews {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+main .reviews article {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 40px;
+}
+
+@media (min-width: 992px) {
+    main .reviews article:first-child {
+        transform: translatey(-30px);
+        -webkit-transform: translatey(-30px);
+        -moz-transform: translatey(-30px);
+        -ms-transform: translatey(-30px);
+        -o-transform: translatey(-30px);
+    }
+
+    main .reviews article:nth-child(2) {
+        transform: translatey(-15px);
+        -webkit-transform: translatey(-15px);
+        -moz-transform: translatey(-15px);
+        -ms-transform: translatey(-15px);
+        -o-transform: translatey(-15px);
+    }
+}
+
+main .reviews article .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+main .reviews article .title img {
+    width: 38px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 25px;
+}
+
+main .reviews article .title .profile-name h3 {
+    color: hsl(300, 24%, 96%);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+main .reviews article .title .profile-name span {
+    display: block;
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+main .reviews article p {
+    color: hsl(300, 24%, 96%);
+    font-size: 16px;
+    line-height: 1.5;
+}
