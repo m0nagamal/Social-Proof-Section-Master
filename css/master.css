@@ -146,6 +146,7 @@ main .reviews {
     flex-basis: 100%;
     display: flex;
     gap: 35px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
