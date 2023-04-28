@@ -58,7 +58,7 @@ main .details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 main .details .info {
